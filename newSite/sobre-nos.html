@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,256 +8,325 @@
     <link rel="stylesheet" href="css/sobre-nos.css">
     <title>Sobre Nós</title>
 </head>
+
 <body>
-        <!-- ============================================ -->
-<!--                 Navigation                   -->
-<!-- ============================================ -->
 
-<header id="cs-navigation">
-    <div class="cs-container">
-        <!--Nav Logo-->
-        <!--Logo is turned white in the css with a filter on dark mode-->
-        <a href="" class="cs-logo" aria-label="back to home">
-            <img src="imgs/Horizontal-Original.png" alt="logo"aria-hidden="true" decoding="async">
-        </a>
-        <!--Navigation List-->
-        <nav class="cs-nav" role="navigation">
-            <!--Mobile Nav Toggle-->
-            <button class="cs-toggle" aria-label="mobile menu toggle">
-                <div class="cs-box" aria-hidden="true">
-                    <span class="cs-line cs-line1" aria-hidden="true"></span>
-                    <span class="cs-line cs-line2" aria-hidden="true"></span>
-                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <!--Logo is turned white in the css with a filter on dark mode-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="imgs/Horizontal-Original.png" alt="logo" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="index.html" class="cs-li-link">
+                                Início
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="sobre-nos.html" class="cs-li-link cs-active">
+                                Sobre Nós
+                            </a>
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Serviços
+                                <img class="cs-drop-icon"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg"
+                                    alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Registration</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-            <div class="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                    <li class="cs-li">
-                        <a href="index.html" class="cs-li-link">
-                            Início
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="sobre-nos.html" class="cs-li-link cs-active">
-                            Sobre Nós
-                        </a>
-                    </li>
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li cs-dropdown" tabindex="0">
-                        <span class="cs-li-link">
-                            Serviços
-                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                        </span>
-                        <ul class="cs-drop-ul">
-                            <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Registration</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link">
-                            Blog
-                        </a>
-                    </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-li-link">
-                            Contato
-                        </a>
-                    </li>
-                </ul>
+            </nav>
+            <div class="cs-contact-group">
+                <div class="cs-social">
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo"
+                            width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo"
+                            width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo"
+                            width="12" height="12" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
             </div>
-        </nav>
-        <div class="cs-contact-group">
-            <div class="cs-social">
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-                </a>
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-                </a>
-                <a href="" class="cs-social-link">
-                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
-                </a>
-            </div>
-        </div>
 
-</header>
-<!-- ============================================ -->
-<!--                   Hero                       -->
-<!-- ============================================ -->
+    </header>
+    <!-- ============================================ -->
+    <!--                   Hero                       -->
+    <!-- ============================================ -->
 
-<section id="hero-408">
-    <div class="cs-container">
-        <div class="cs-content">
-            <h2 class="cs-title"><span class="cs-color">Transformamos Conhecimento</span> em Impacto Real</h2>
-            <p class="cs-text">
-                Desde 1996, unimos inovação, excelência técnica e espírito empreendedor para impulsionar empresas, formar líderes e transformar a sociedade. Conheça a Konvex Júnior: onde ideias se tornam soluções.
-            </p>
-            <a href="" class="cs-button-solid">Contato</a>
-            <a href="" class="cs-button-transparent">Nossos Serviços</a>
-
-        </div>
-        <div class="cs-stat-group">
-            <picture class="cs-background">
-                <source media="(max-width: 600px)" srcset="imgs/index/time.jpg">
-                <source media="(min-width: 601px)" srcset="imgs/index/time.jpg">
-                <img loading="lazy" decoding="async" src="imgs/index/time.jpg" alt="leaves" width="842" height="737" aria-hidden="true">
-            </picture>
-        </div>
-    </div>
-</section>
-<!-- ============================================ -->
-<!--                Side By Side                  -->
-<!-- ============================================ -->
-
-<section id="RPsbs-1593">
-    <div class="cs-container">
-        <div >
-            <!--Top left image-->
-            <picture style="justify-content: center; width: 80%;">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg" alt="mechanic" width="413" height="500">
-            </picture>
-
-        </div>
-        <div class="cs-content">
-            <span class="cs-topper">Konvex jr.</span>
-            <h2 class="cs-title">Nossa História</h2>
-            <p class="cs-text">
-                Fundada em 1996, a Konvex Consultoria nasceu com o propósito de integrar o conhecimento técnico à prática empresarial. Criada dentro da UDESC/CCT em Joinville/SC, desde o início atua nas áreas de Engenharia Elétrica, Engenharia Mecânica e Tecnologia da Informação, promovendo impacto real em empresas, no meio acadêmico e na sociedade.
-                <br>
-                <br>
-            Com mais de 150 projetos realizados, contribuímos para a melhoria de processos, aumento de lucratividade e desenvolvimento social. Nossa trajetória é marcada pela formação de líderes, hoje presentes em grandes empresas, conduzindo projetos de alto valor agregado ou empreendendo com sucesso.</p>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!--             Side By Side Reverse             -->
-<!-- ============================================ -->
-
-<section id="RPsbsr-1593">
-    <div class="cs-container">
-
-        <div class="cs-content">
-            <span class="cs-topper">konvex jr.</span>
-            <h2 class="cs-title">Evolução e Transformação</h2>
-            <p class="cs-text">
-                Sempre em sintonia com a inovação, em 2020, a Konvex passou por uma profunda renovação: reformulamos nossa identidade visual, modernizamos nossa sede e nos consolidamos como Konvex Júnior. Essa transformação reforçou nossa missão de impulsionar ideias, desenvolver talentos e gerar impacto positivo para nossos clientes e para a sociedade.
-                <br>
-                <br>
-                Mantemos viva nossa essência: crescer de forma colaborativa, resolver desafios e cultivar o espírito de inovação que sempre nos acompanhou.
-                
+    <section id="hero-408">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title"><span class="cs-color">Transformamos Conhecimento</span> em Impacto Real</h2>
+                <p class="cs-text">
+                    Desde 1996, unimos inovação, excelência técnica e espírito empreendedor para impulsionar empresas,
+                    formar líderes e transformar a sociedade. Conheça a Konvex Júnior: onde ideias se tornam soluções.
                 </p>
+                <a href="" class="cs-button-solid">Contato</a>
+                <a href="" class="cs-button-transparent">Nossos Serviços</a>
+
+            </div>
+            <div class="cs-stat-group">
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="imgs/index/time.jpg">
+                    <source media="(min-width: 601px)" srcset="imgs/index/time.jpg">
+                    <img loading="lazy" decoding="async" src="imgs/index/time.jpg" alt="leaves" width="842" height="737"
+                        aria-hidden="true">
+                </picture>
+            </div>
         </div>
-        <div class="">
-            <div >
+    </section>
+    <!-- ============================================ -->
+    <!--                Side By Side                  -->
+    <!-- ============================================ -->
+
+    <section id="RPsbs-1593">
+        <div class="cs-container">
+            <div>
                 <!--Top left image-->
                 <picture style="justify-content: center; width: 80%;">
                     <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
                     <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg" alt="mechanic" width="413" height="500">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg" alt="mechanic"
+                        width="413" height="500" style="margin-left: 100px;">
                 </picture>
-    
+
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Konvex jr.</span>
+                <h2 class="cs-title">Nossa História</h2>
+                <p class="cs-text">
+                    Fundada em 1996, a Konvex Consultoria nasceu com o propósito de integrar o conhecimento técnico à
+                    prática empresarial. Criada dentro da UDESC/CCT em Joinville/SC, desde o início atua nas áreas de
+                    Engenharia Elétrica, Engenharia Mecânica e Tecnologia da Informação, promovendo impacto real em
+                    empresas, no meio acadêmico e na sociedade.
+                    <br>
+                    <br>
+                    Com mais de 160 projetos realizados, contribuímos para a melhoria de processos, aumento de
+                    lucratividade e desenvolvimento social. Nossa trajetória é marcada pela formação de líderes, hoje
+                    presentes em grandes empresas, conduzindo projetos de alto valor agregado ou empreendendo com
+                    sucesso.
+                </p>
             </div>
         </div>
-    </div>
-</section>
-<!-- ============================================ -->
-<!--                    Stats                     -->
-<!-- ============================================ -->
 
-<section id="stats-888">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">konvex jr.</span>
-            <h2 class="cs-title">Nossos Valores e Missão</h2>
-            <p class="cs-text">
-                União, compromisso, Proatividade, Transparencia Ambição, Orgulho
-            </p>
-            <p class="cs-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eos eum amet atque deserunt ut quibusdam quam qui quidem quae.
-            </p>
-            <a href="" class="cs-button-solid">Schedule An Appointment</a>
+        <div class="cs-container">
+
+            <div class="cs-content">
+                <span class="cs-topper">konvex jr.</span>
+                <h2 class="cs-title">Evolução e Transformação</h2>
+                <p class="cs-text">
+                    Sempre em sintonia com a inovação, em 2020, a Konvex passou por uma profunda renovação: reformulamos
+                    nossa identidade visual, modernizamos nossa sede e nos consolidamos como Konvex Júnior. Essa
+                    transformação reforçou nossa missão de impulsionar ideias, desenvolver talentos e gerar impacto
+                    positivo para nossos clientes e para a sociedade.
+                    <br>
+                    <br>
+                    Mantemos viva nossa essência: crescer de forma colaborativa, resolver desafios e cultivar o espírito
+                    de inovação que sempre nos acompanhou.
+
+                </p>
+            </div>
+            <div class="">
+                <div>
+                    <!--Top left image-->
+                    <picture style="justify-content: center; width: 80%;">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg"
+                            alt="mechanic" width="413" height="500" style="margin-right: 100px;">
+                    </picture>
+
+                </div>
+            </div>
         </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <span class="cs-number">União</span>
+    </section>
+    <!-- ============================================ -->
+    <!--                    Stats                     -->
+    <!-- ============================================ -->
+
+    <section id="stats-888">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">konvex jr.</span>
+                <h2 class="cs-title">Nossos Valores e Missão</h2>
+                <p class="cs-text">
+                    União, compromisso, Proatividade, Transparencia Ambição, Orgulho
+                </p>
+                <p class="cs-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eos eum amet atque deserunt ut
+                    quibusdam quam qui quidem quae.
+                </p>
+                <a href="" class="cs-button-solid">Schedule An Appointment</a>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-number">União</span>
                 </li>
-            <li class="cs-item">
-                <span class="cs-number">Orgulho</span>
+                <li class="cs-item">
+                    <span class="cs-number">Orgulho</span>
                 </li>
-            <li class="cs-item">
-                <span class="cs-number">Ambição</span>
+                <li class="cs-item">
+                    <span class="cs-number">Ambição</span>
                 </li>
-            <li class="cs-item">
-                <span class="cs-number">Transparência</span>
+                <li class="cs-item">
+                    <span class="cs-number">Transparência</span>
                 </li>
-            <li class="cs-item">
-                <span class="cs-number">Proatividade</span>
+                <li class="cs-item">
+                    <span class="cs-number">Proatividade</span>
                 </li>
-            <li class="cs-item">
-                <span class="cs-number">Compromisso</span>
+                <li class="cs-item">
+                    <span class="cs-number">Compromisso</span>
                 </li>
-        </ul>
-    </div>
-</section>
-<section id="stats-888">
-    <div class="cs-container">
-        <div class="cs-content grid-valores">
-            <span class="cs-topper">konvex jr.</span>
-            <h2 class="cs-title">Nossos Valores e Missão</h2>
-            <div style="width: 80%; background-color: var(--primary);"> <h1>nice</h1></div>
-            <span class="cs-topper">konvex jr.</span>
-            <h2 class="cs-title">Nossos Valores e Missão</h2>
+            </ul>
         </div>
-        <div>
-            <div></div>
-            
+    </section>
+    <section id="stats-888">
+        <div class="cs-container">
+            <div class="cs-content grid-valores">
+                <span class="cs-topper">konvex jr.</span>
+                <h2 class="cs-title">Nossos Valores e Missão</h2>
+                <div style="width: 80%; background-color: var(--primary);">
+                    <h1>nice</h1>
+                </div>
+                <span class="cs-topper">konvex jr.</span>
+                <h2 class="cs-title">Nossos Valores e Missão</h2>
+            </div>
+            <div>
+                <div></div>
+
+            </div>
         </div>
+
+    </section>
+    <!-- ============================================ -->
+    <!--                    CTA                       -->
+    <!-- ============================================ -->
+
+    <section id="cta-262">
+        <div class="cs-container">
+            <div class="cs-left-section">
+                <h2 class="cs-title">Schedule Your Next Checkup With Us</h2>
+                <a href="" class="cs-button-solid">Request Appointment</a>
+            </div>
+            <div class="cs-content">
+                <span class="cs-header">Available Hours</span>
+                <p class="cs-p">
+                    Tuesday, Thursday, Friday: 9am-6pm<br>
+                    ​(closed for lunch 12pm-2pm)
+                </p>
+                <p class="cs-p">
+                    Appointments Preferred, Walk-Ins Welcome.<br>
+                    Saturdays by Appointment Only.
+                </p>
+            </div>
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth.jpg" alt="appliance" width="275"
+                    height="132">
+            </picture>
+        </div>
+    </section>
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img class="imagem_carrossel" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Duck_wings_outstretched.jpg/1280px-Duck_wings_outstretched.jpg" alt="Imagem">
+            </div>
+            <div class="swiper-slide">
+                <img class="imagem_carrossel" src="https://xamanismoseteraios.com.br/wp-content/uploads/2021/07/dolphin-1019616_1920.jpg" alt="Imagem">
+            </div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+
+        <!-- Botões de navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
     </div>
 
-</section>                
-<!-- ============================================ -->
-<!--                    CTA                       -->
-<!-- ============================================ -->
 
-<section id="cta-262">
-    <div class="cs-container">
-        <div class="cs-left-section">
-            <h2 class="cs-title">Schedule Your Next Checkup With Us</h2>
-            <a href="" class="cs-button-solid">Request Appointment</a>
-        </div>
-        <div class="cs-content">
-            <span class="cs-header">Available Hours</span>
-            <p class="cs-p"> 
-                Tuesday, Thursday, Friday: 9am-6pm<br>
-                ​(closed for lunch 12pm-2pm)
-            </p>
-            <p class="cs-p">
-                Appointments Preferred, Walk-Ins Welcome.<br>
-                Saturdays by Appointment Only.
-            </p>
-        </div>
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth-m.jpg">
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth.jpg">
-            <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth.jpg" alt="appliance" width="275" height="132">
-        </picture>
-    </div>
-</section>
-                                   
-
-<script src="js/global.js"></script>                       
-                                                     
+    <!-- CSS do Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- JS do Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/global.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+    });
+    </script>
 </body>
+
 </html>
