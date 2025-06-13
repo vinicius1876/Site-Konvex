@@ -3,69 +3,160 @@
 <head>
     <meta charset="UTF-8" />
     <title>Contato</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/contato.global.css">
+    <link rel="stylesheet" href="./css/contato.css">
 </head>
 <body>
-    <section id="cs-contact-490">
-        <div class="cs-container">
-            <!-- Contact Info -->
-            <div class="cs-content">
-                <span class="cs-topper">Contact Us</span>
-                <h2 class="cs-title">Contact Information</h2>
-                <p class="cs-text">
-                    Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Eu volutpat odio facilisis mauris sit amet massa. Sit amet est placerat in egestas
-                </p>
-                
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a href="" class="cs-link">
-                    PO Box 15252 Mill Creek, <br>Washington, USA 98082
-                </a>
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a href="mailto:info@iabuyer.com" class="cs-link">info@iabuyer.com</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a href="tel:425-686-9566" class="cs-link">(425) 686-9566</a>
-
-                <!--Social Buttons-->
-                <div class="cs-social">
-                    <a class="cs-social-link" aria-label="visit google profile" href="">
-                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
-                    </a>
-                    <a class="cs-social-link" aria-label="visit facebook profile" href="">
-                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
-                    </a>
-                    <a class="cs-social-link" aria-label="visit instagram profile" href="">
-                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
-                    </a>
+    <header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="./imgs/Horizontal-Original.png" alt="logo"aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
                 </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link cs-active">
+                            Início
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="sobre-nos.html" class="cs-li-link">
+                            Sobre Nós
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Serviços
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Registration</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <!-- Form -->
-            <form id="cs-form-490" name="Contact Form" method="post">
-                <label class="cs-label">
-                    Name
-                    <input class="cs-input" required type="text" id="name-490" name="name" placeholder="John/Jane Doe">
-                </label>
-                <label class="cs-label">
-                    Email
-                    <input class="cs-input" required type="text" id="email-490" name="email" placeholder="name@company.com">
-                </label>
-                <label class="cs-label">
-                    Phone
-                    <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
-                </label>
-                <label class="cs-label">
-                    How Did You Find Us
-                    <input class="cs-input" type="text" id="find-490" name="find-us" placeholder="Social Media, Family, Friend...">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I’m interested in..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message Now</button>
-            </form>
+        </nav>
+        <div class="cs-contact-group">
+            <div class="cs-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
         </div>
-    </section>                               
+
+</header>
+<!-- ============================================ -->
+<!--                Contact Form                  -->
+<!-- ============================================ -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<section id="cs-contact-490">
+    <div class="cs-container">
+        <!-- Contact Info -->
+        <div class="cs-content">
+            <span class="cs-topper">Entre em contato</span>
+            <h2 class="cs-title">Venha mudar a imagem da sua empresa!</h2>
+            <p class="cs-text">
+                <!--caso queira botar texto depois-->
+            </p>
+            
+            <!--Address-->
+            <span class="cs-header">Endereço</span>
+            <a href="https://www.google.com.br/maps/dir//Konvex+Jr.+-+R.+Paulo+Malschitzki,+200,+Centro+de+Conviv%C3%AAncia+Harro+Stamm,+Segundo+Piso+-+Zona+Industrial+Norte,+Joinville+-+SC,+89219-710/@-26.2532031,-48.9383637,12z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x94deafe3c70028c5:0x922964e94eef2cb7!2m2!1d-48.855961!2d-26.2533806!3e3?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDYwOS4xIKXMDSoASAFQAw%3D%3D" class="cs-link"target="_blank">
+                R. Paulo Malschitzki, 200 - Zona Industrial Norte, <br> Joinville -SC, 89219-710, 
+            </a>
+            <!--Email-->
+            <span class="cs-header">Email</span>
+            <a href="mailto:info@iabuyer.com" class="cs-link">contato@konvexjr.com.br</a>
+            <!--Phone-->
+            <span class="cs-header">Telefone</span>
+            <a href="tel:425-686-9566" class="cs-link">(17) 98184-9594</a>
+
+            <!--Social Buttons-->
+      <div class="cs-social">
+    <a class="cs-social-link" aria-label="visit linkedin profile" href="https://www.linkedin.com/company/konvex-jr/"target="_blank">
+        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+             src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin" width="11" height="11">
+    </a>
+    <a class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/konvexjr?locale=pt_BR"target="_blank">
+        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+             src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+    </a>
+    <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/konvexjr/"target="_blank">
+        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+             src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+    </a>
+    <a class="cs-social-link" aria-label="visit whatsapp profile" href="https://api.whatsapp.com/send?l=pt&phone=5547988765799&text=Olá!%20Me%20conte%20mais%20sobre%20a%20Konvex%20Jr!"target="_blank">
+        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async"
+             src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="whatsapp" width="11" height="11">
+    </a>
+</div>
+
+        </div>
+        <!-- Form -->
+       <form id="cs-form-490" name="Contact Form" method="post">
+    <label class="cs-label">
+        Nome
+        <input class="cs-input" required type="text" id="name-490" name="name" placeholder="Seu nome completo">
+    </label>
+    <label class="cs-label">
+        Email
+        <input class="cs-input" required type="email" id="email-490" name="email" placeholder="seuemail@exemplo.com">
+    </label>
+    <label class="cs-label">
+        Telefone
+        <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="(11) 91234-5678">
+    </label>
+    <label class="cs-label-message">
+        Mensagem
+        <textarea class="cs-input" required name="message" id="message-490" placeholder="Digite sua mensagem aqui..."></textarea>
+    </label>
+    <button class="cs-button-solid" type="submit">Enviar Mensagem</button>
+</form>
+
+    </div>
+
+    
+</section>                    
 </body>
 </html>
